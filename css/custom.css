@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 /*===========[Subcontent Area]============*/
 
-
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+  }
+  body{
+    background: #e1ecf2;
+  }
+  
  .title-1{
     font-size: 1.3em;
     margin-top: 10px;
