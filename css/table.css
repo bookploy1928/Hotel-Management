@@ -12,6 +12,15 @@ body {
     table-layout: fixed;
   }
   
+.table thead th {
+ 
+  background:linear-gradient(to bottom, #39bdde 5%, #396ddf 100%);
+  background-color:#39bdde;
+  color: white !important;
+  height: 10px;
+  font-size: 15px;
+}
+  
   table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
