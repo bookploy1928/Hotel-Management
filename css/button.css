@@ -1,0 +1,108 @@
+/* button */
+
+/* Green */
+.myButton1 {
+	box-shadow:inset 0px 1px 0px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:6px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton1:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+
+/* Blue */
+.myButton2 {
+	box-shadow:inset 0px 1px 0px 0px #39bdde;
+	background:linear-gradient(to bottom, #39bdde 5%, #396ddf 100%);
+	background-color:#39bdde;
+	border-radius:6px;
+	border:1px solid #396ddf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d39de;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #396ddf 5%, #39bdde 100%);
+	background-color:#396ddf;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+/* Red */
+.myButton3 {
+	box-shadow:inset 0px 1px 0px 0px #de397b;
+	background:linear-gradient(to bottom, #d6177d 5%, #ed0e3b 100%);
+	background-color:#d6177d;
+	border-radius:6px;
+	border:1px solid #e02f6a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f2082f;
+}
+.myButton3:hover {
+	background:linear-gradient(to bottom, #ed0e3b 5%, #d6177d 100%);
+	background-color:#ed0e3b;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+/* Orange */
+.myButton4 {
+	box-shadow:inset 0px 1px 0px 0px #de8139;
+	background:linear-gradient(to bottom, #d49517 5%, #eb750e 100%);
+	background-color:#d49517;
+	border-radius:6px;
+	border:1px solid #de892f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff6600;
+}
+.myButton4:hover {
+	background:linear-gradient(to bottom, #eb750e 5%, #d49517 100%);
+	background-color:#eb750e;
+}
+.myButton4:active {
+	position:relative;
+	top:1px;
+}
+
+        
+        

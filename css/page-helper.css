@@ -1,0 +1,204 @@
+/*===============[subcontent div]===================*/
+
+.subcontent-main-div {
+    margin: 0 auto;
+}
+
+
+/*===============[column]===================*/
+
+.columns {
+    display: flex;
+    align-items: center;
+}
+.columns-fix {
+    width: 500px;
+ 
+}
+
+.column {
+    width: 100%;
+}
+.column.is-20 {
+    flex: none;
+    width: 20%;
+}
+.column.is-30 {
+    flex: none;
+    width: 30%;
+}
+
+.column.is-40 {
+    flex: none;
+    width: 40%;
+}
+
+.column.is-42 {
+    flex: none;
+    width: 42%;
+}
+
+.column.is-45 {
+    flex: none;
+    width: 45%;
+}
+.column.is-48 {
+    flex: none;
+    width: 48%;
+}
+
+.column.is-50 {
+    flex: none;
+    width: 50%;
+}
+
+.column.is-80 {
+    flex: none;
+    width: 80%;
+}
+.column.is-90 {
+    flex: none;
+    width: 92%;
+}
+.column.table1{
+    width:100%; 
+    height:275px; 
+    overflow:auto;
+   background-color: white;
+}
+
+.column.is-269px {
+    width:269px; 
+}
+
+.is-height50px {
+    height: 50px;
+}
+
+
+.columns.is-center {
+    justify-content: center;
+}
+
+.boder-right{
+    border-right: 1.5px solid rgb(197, 197, 218);
+}
+.boder-left{
+    border-left: 1.5px solid rgb(197, 197, 218);
+}
+
+/*===============[text helper]===================*/
+
+.text-center {
+    text-align: center;
+}
+
+.is-rounded{
+    border-radius: 25px;
+}
+.is-pulled-right {
+    float: right !important;
+}
+
+.is-pulled-left {
+    float: left !important;
+}
+
+/*===============[margin]===================*/
+.margin-left0point5{
+    margin-left: 0.5%;
+}
+.margin-left8point5{
+    margin-left: 8.5%;
+}
+.margin-left4{
+    margin-left: 4%;
+}
+.margin-left10{
+    margin-left: 10%;
+}
+
+.margin-left18{
+    margin-left: 16%;
+}
+.margin-left20{
+    margin-left: 20%;
+}
+.margin-left30{
+    margin-left: 30%;
+}
+.margin-left50{
+    margin-left: 50%;
+}
+
+.margin-left70{
+    margin-left: 70%;
+}
+.margin-left125{
+    margin-left: 125%;
+}
+.margin-left175{
+    margin-left: 175%;
+}
+.margin-left60px{
+    margin-left: 60px;
+}
+.margin-bottom1{
+    margin-bottom: 1%;
+}
+
+.margin-bottom3point5{
+    margin-bottom: 3.5%;
+}
+.margin-bottom8{
+    margin-bottom: 8%;
+}
+
+.margin-bottom40{
+    margin-bottom: 8.5%;
+}
+.margin-bottom43{
+    margin-bottom: 35.5%;
+}
+
+.margin-bottom30px{
+    margin-bottom: 30px;
+}
+.margin-bottom40px{
+    margin-bottom: 40px;
+}
+.margin-top1{
+    margin-top: 1%;
+}
+
+.margin-top5{
+    margin-top: 5%;
+}
+.margin-top100px{
+    margin-top: 100px;
+}
+.margin-top85px{
+    margin-top: 85px;
+}
+
+.margin-top30px{
+    margin-top: 30px;
+}
+.margin-top20px{
+    margin-top: 20px;
+}
+.margin-search{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.margin-right2px{
+    margin-right: 2px;
+}
+.gap{
+    column-gap: 40px;
+}
+.label-is-40{
+    width: 40%;
+}
+
+
