@@ -24,7 +24,7 @@
  .is-blue-text-label {
     background-color: white !important;
     color: #102669 !important;
-    font-size: 1.2em;
+    font-size: 1.15em;
     margin-top: 15px;
 }
 
@@ -68,4 +68,5 @@
     border-radius: 5px;
     font-size: 16px;
 }
+
 

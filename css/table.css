@@ -43,6 +43,11 @@ body {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+
+  table tr:focus-within {
+    background: #aee8f5;
+  }
+
   
   @media screen and (max-width: 600px) {
     table {
@@ -73,7 +78,7 @@ body {
     table td {
       border-bottom: 1px solid #ddd;
       display: block;
-      font-size: .8em;
+      font-size: .95em;
       text-align: right;
     }
     
