@@ -104,5 +104,55 @@
 	top:1px;
 }
 
+.myButton5 {
+	box-shadow:inset 0px 1px 0px 0px #39bdde;
+	background:linear-gradient(to bottom, #39bdde 5%, #396ddf 100%);
+	background-color:#39bdde;
+	border-radius:6px;
+	border:1px solid #396ddf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d39de;
+	padding: 0.25em 0.8em;
+}
+.myButton5:hover {
+	background:linear-gradient(to bottom, #396ddf 5%, #39bdde 100%);
+	background-color:#396ddf;
+}
+.myButton5:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton6 {
+	box-shadow:inset 0px 1px 0px 0px #de397b;
+	background:linear-gradient(to bottom, #d6177d 5%, #ed0e3b 100%);
+	background-color:#d6177d;
+	border-radius:6px;
+	border:1px solid #e02f6a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Prompt', sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	padding: 0.25em 0.8em;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f2082f;
+}
+.myButton6:hover {
+	background:linear-gradient(to bottom, #ed0e3b 5%, #d6177d 100%);
+	background-color:#ed0e3b;
+}
+.myButton6:active {
+	position:relative;
+	top:1px;
+}
+
         
         

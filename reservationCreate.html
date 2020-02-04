@@ -8,14 +8,19 @@
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/page-helper.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/button.css">
+  
+    <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/page-helper.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/modal.css">
 
+
+  <script src="js/modal.js"></script>
+  <script src="js/reservation.js"></script>
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -32,7 +37,7 @@
   <div class="header">
     <label class="is-white-text-label margin-left60px"><i class="fas fa-building"></i> Hotel Management</label>
   </div>
-  
+
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>
@@ -42,12 +47,24 @@
   <!-- SideBar -->
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
-      <a href="index.html" ><li ><span><i class="fa fa-home"></i> หน้าแรก</span></li></a>
-      <a class="active" href="reservationCreate.html" ><li ><span><i class="far fa-calendar-alt"></i> สร้างการจอง</span></li></a>
-      <a href="reservationManage.html" ><li ><span><i class="fas fa-edit"></i> จัดการการจอง</span></li></a>
-      <a href="index.html" ><li ><span><i class="far fa-calendar-check"></i> เช็คอิน</span></li></a>
-      <a href="index.html" ><li ><span><i class="fas fa-sign-out-alt"></i> เช็คเอาท์</span></li></a>
-      <a href="index.html" ><li ><span><i class="fas fa-bed"></i> จัดการห้อง</span></li></a>
+      <a href="index.html">
+        <li><span><i class="fa fa-home"></i> หน้าแรก</span></li>
+      </a>
+      <a class="active" href="reservationCreate.html">
+        <li><span><i class="far fa-calendar-alt"></i> สร้างการจอง</span></li>
+      </a>
+      <a href="reservationManage.html">
+        <li><span><i class="fas fa-edit"></i> จัดการการจอง</span></li>
+      </a>
+      <a href="index.html">
+        <li><span><i class="far fa-calendar-check"></i> เช็คอิน</span></li>
+      </a>
+      <a href="index.html">
+        <li><span><i class="fas fa-sign-out-alt"></i> เช็คเอาท์</span></li>
+      </a>
+      <a href="index.html">
+        <li><span><i class="fas fa-bed"></i> จัดการห้อง</span></li>
+      </a>
       </li>
     </ul>
   </div>
@@ -59,23 +76,25 @@
       <div class="title-1">สร้างการจอง</div>
     </div>
 
+    <!-- column 1 -->
     <div class="w3-row w3-border w3-card w3-white ">
       <div class="w3-third w3-container">
-        <label class="is-blue-text-label" >เลขที่การจอง</label>
+        <label class="is-blue-text-label">เลขที่การจอง</label>
         <input type="text" class="form-control" disabled>
 
         <label class="is-blue-text-label">ชื่อลูกค้า</label>
         <input type="text" class="form-control">
 
-        
+
         <label class="is-blue-text-label">รหัสลูกค้า</label>
         <input type="text" class="form-control">
-       
+
         <label class="is-blue-text-label">วันที่จอง</label>
         <input class="form-control" type="date" id="example-date-input">
       </div>
 
-      <div class="w3-third w3-container ">
+      <!-- column 2 -->
+      <div class="w3-third w3-container margin-bottom30px">
         <div class="columns">
           <div class="column is-48">
             <label class="is-blue-text-label">เช็คอิน</label>
@@ -87,15 +106,23 @@
           </div>
         </div>
 
-        <label class="is-blue-text-label">ประเภทห้อง</label>
-        <select class="form-control" id="exampleSelect1">
-          <option>Superior Room</option>
-          <option>Deluxe Room</option>
-          <option>Grand Deluxe Room</option>
-          <option>Junior Suite Room</option>
-          <option>Royal Ruite Room</option>
-          <option>Family Room</option>
-        </select>
+        <div class="columns">
+          <div class="column is-48">
+            <label class="is-blue-text-label">ประเภทห้อง</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>Superior Room</option>
+              <option>Deluxe Room</option>
+              <option>Grand Deluxe Room</option>
+              <option>Junior Suite Room</option>
+              <option>Royal Ruite Room</option>
+              <option>Family Room</option>
+            </select>
+          </div>
+          <div class="column is-48 margin-left4">
+            <label class="is-blue-text-label">ราคาห้อง</label>
+            <input type="text" class="form-control" disabled>
+          </div>
+        </div>
 
         <label class="is-blue-text-label ">เลขที่ห้อง</label>
         <select class="form-control">
@@ -111,10 +138,10 @@
         <select class="form-control">
           <option>Reservation</option>
           <option>Confirm</option>
-          <option>Cancel</option>
         </select>
       </div>
 
+      <!-- column 3 -->
       <div class="w3-third w3-container  margin-bottom40px">
         <label class="is-blue-text-label">จำนวนผู้เข้าพัก</label>
         <select class="form-control">
@@ -149,12 +176,58 @@
         </div>
 
         <label class="is-blue-text-label">ความต้องการพิเศษ</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        <div>
+          <button class="myButton6 is-pulled-right margin-left4px" onclick="selectSpecialRequest()"><i
+            class="fas fa-trash-alt" aria-hidden="true"> ลบ</i></button>
+
+          <button class="myButton5 is-pulled-right " onclick="document.getElementById('id01').style.display='block'"><i
+              class="fa fa-plus" aria-hidden="true"> เพิ่ม</i></button>    
+        </div>
+        <select multiple class="form-control margin-top30px" id="specialRequest" name="values" >
+          <option>โค๊ก x 2 ราคา 99 บาท</option>
+          <option>อาหารเช้า x 2 ราคา 100 บาท</option>
+          <option>กาแฟ x 1 ราคา 20 บาท</option>
+        </select>
         <button class="myButton1 margin-top30px is-pulled-right">บันทึกการจอง</button>
       </div>
     </div>
-
     <!-- End Page Container -->
+  </div>
+
+  <!-- Modal บันทึก -->
+  <div id="id01" class="modal">
+    <form class="modal-content" action="/action_page.php">
+      <div class="w3-container w3-card">
+        <div class="margin-bottom15px margin-top13px">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close">x</span>
+        </div>
+
+        <label class="is-blue-text-label margin-top30px">ความต้องการพิเศษ</label>
+        <select class="form-control">
+          <option>Select</option>
+          <option>โค๊ก</option>
+          <option>เบียร์</option>
+          <option>Taxi</option>
+          <option>อาหารเช้า</option>
+          <option>กาแฟ</option>
+        </select>
+
+        <div class="columns">
+          <div class="column is-48">
+            <label class="is-blue-text-label ">จำนวน</label>
+            <input class="form-control" type="number" value="1" id="example-number-input">
+          </div>
+          <div class="column is-48 margin-left4">
+            <label class="is-blue-text-label">ราคา</label>
+            <input type="text" class="form-control" disabled>
+          </div>
+        </div>
+        <div class="is-center margin-top30px margin-bottom15px">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="myButton1 is-center ">บันทึก</button>
+        </div>
+      </div>
+    </form>
   </div>
 </body>
 

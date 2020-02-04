@@ -2,150 +2,216 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
  
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
- 
-body {
-  background: #0a122a;
-  font-family: roboto;
-}
- 
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 550px;
-}
- 
-.wrapper ul {
-  list-style: none;
-}
- 
-.wrapper ul li {
-  width: 65px;
-  height: 65px;
-  margin: 0 15px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 5px solid #d8e2dc;
-  float: left;
+
+/* icon1 */
+.icon1 {
+  color: #023ab3;
   position: relative;
-  transition: all 0.5s ease;
+  padding: 50px;
+  background:linear-gradient(to bottom, #39bdde 5%, #396ddf 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(27, 92, 233, 0.705),0 6px 20px 0 rgba(27, 92, 233, 0.705);
+  cursor: pointer;
 }
- 
-.wrapper ul li .fab {
-  color: #d8e2dc;
-  line-height: 65px;
-  font-size: 24px;
-  transition: all 0.5s ease;
+.icon1:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
- 
-/*facebook*/
-.wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-}
- 
-.wrapper ul li:hover .fa-facebook-f,
-.wrapper ul li.facebook:hover:before {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-}
- 
-/*twitter*/
-.wrapper ul li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-}
- 
-.wrapper ul li:hover .fa-twitter,
-.wrapper ul li.twitter:hover:before {
-  color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-}
- 
-/* instagram */
-.wrapper ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-}
- 
-.wrapper ul li:hover .fa-instagram,
-.wrapper ul li.instagram:hover:before {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-}
- 
-/* google */
-.wrapper ul li:hover.google {
-  border: 5px solid #dd4b39;
-  box-shadow: 0 0 15px #dd4b39;
-}
- 
-.wrapper ul li:hover .fa-google-plus-g,
-.wrapper ul li.google:hover:before {
-  color: #dd4b39;
-  text-shadow: 0 0 15px #dd4b39;
-}
- 
-/* whatsapp */
-.wrapper ul li:hover.whatsapp {
-  border: 5px solid #4dc247;
-}
- 
-.wrapper ul li:hover .fa-whatsapp,
-.wrapper ul li.whatsapp:hover:before {
-  color: #4dc247;
-  text-shadow: 0 0 15px #4dc247;
-}
- 
- 
-/* For creating the text below the icons, I'm going to use the before pseudo element.*/
-ul li:before {
+.icon1-logo-size{
+  font-size: 70px;
   position: absolute;
-  bottom: -35px;
-  color: #fff;
-  font-size: 18px;
+  top: 15px;
+  left: 59px;
+}
+.text-icon1{
+  font-size: 20px;
   font-weight: bold;
-  transition: all 0.5s ease;
+  position: absolute;
+  top: 110px;
+  left: 36px;
+  color: #023094;
 }
- 
-ul li.facebook:before {
-  content: "Facebook";
-  left: -5px;
+
+/* icon2 */
+.icon2 {
+  color: #5903a0;
+  position: relative;
+  padding: 50px;
+  background:linear-gradient(to bottom, #c169fc 5%, #812ee0 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(175, 27, 233, 0.705),0 6px 20px 0 rgba(133, 27, 233, 0.705);
+  cursor: pointer;
 }
- 
-ul li.twitter:before {
-  content: "Twitter";
-  left: 5px;
+.icon2:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
- 
-ul li.instagram:before {
-  content: "Instagram";
-  left: -5px;
+
+.icon2-logo-size{
+  font-size: 70px;
+  position: absolute;
+  top: 15px;
 }
- 
-ul li.google:before {
-  content: "Google";
-  left: 5px;
+.text-icon2{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 57px;
+  color: #3e046d;
 }
- 
-ul li.whatsapp:before {
-  content: "Whatsapp";
-  left: -5px;
+
+/* icon3 */
+.icon3 {
+  color: #03a003;
+  position: relative;
+  padding: 50px;
+  background:linear-gradient(to bottom, #69fc70 5%, #2ee02e 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(27, 233, 44, 0.705),0 6px 20px 0 rgba(27, 233, 37, 0.705);
+  cursor: pointer;
 }
- 
- 
- 
-/* media queries */
-@media screen and (max-width: 580px) {
-  .wrapper {
-    width: 150px;
-  }
-  .wrapper ul li {
-    margin-bottom: 35px;
-  }
+.icon3:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
+
+.icon3-logo-size{
+  font-size: 70px;
+  position: absolute;
+  left: 60px;
+  top: 15px;
+}
+.text-icon3{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  color: #057e1f;
+}
+
+/* icon4 */
+.icon4 {
+  color: #a00303;
+  position: relative;
+  padding: 50px;
+  background:linear-gradient(to bottom, #fc6969 5%, #e02e2e 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(233, 27, 27, 0.705),0 6px 20px 0 rgba(233, 27, 27, 0.705);
+  cursor: pointer;
+}
+.icon4:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.icon4-logo-size{
+  font-size: 70px;
+  position: absolute;
+  left: 60px;
+  top: 15px;
+}
+.text-icon4{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 64px;
+  color: #7e0505;
+}
+
+/* icon5 */
+.icon5 {
+  color: #a04f03;
+  position: relative;
+  padding: 50px;
+  background:linear-gradient(to bottom, #fcab69 5%, #e07e2e 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(233, 109, 27, 0.705),0 6px 20px 0 rgba(233, 127, 27, 0.705);
+  cursor: pointer;
+}
+.icon5:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.icon5-logo-size{
+  font-size: 70px;
+  position: absolute;
+  left: 60px;
+  top: 15px;
+}
+.text-icon5{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 56px;
+  color: #7e4605;
+}
+
+/* icon6 */
+.icon6 {
+  color: #948b15;
+  position: relative;
+  padding: 50px;
+  background:linear-gradient(to bottom, #f7e866 5%, #dfcc29 100%);
+  border-radius:10%;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(233, 230, 27, 0.925),0 6px 20px 0 rgb(233, 219, 27);
+  cursor: pointer;
+}
+.icon6:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.icon6-logo-size{
+  font-size: 70px;
+  position: absolute;
+  left: 49px;
+  top: 15px;
+}
+.text-icon6{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 110px;
+  left: 46px;
+  color: #83810e;
+}
+
+
+  

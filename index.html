@@ -51,7 +51,9 @@
       <a href="reservationCreate.html">
         <li><span><i class="far fa-calendar-alt"></i> สร้างการจอง</span></li>
       </a>
-      <a href="reservationManage.html" ><li ><span><i class="fas fa-edit"></i> จัดการการจอง</span></li></a>
+      <a href="reservationManage.html">
+        <li><span><i class="fas fa-edit"></i> จัดการการจอง</span></li>
+      </a>
       <a href="index.html">
         <li><span><i class="far fa-calendar-check"></i> เช็คอิน</span></li>
       </a>
@@ -67,97 +69,54 @@
 
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
     <div class="w3-container w3-card is-blue4 is-height50px margin-top100px">
       <div class="title-1">หน้าแรก</div>
     </div>
 
     <div class="w3-row w3-border w3-card w3-white ">
-      <div class="w3-third w3-container">
-        
+      <div class="w3-third w3-container margin-top100px">
+          <div class="icon2"  onclick="window.location='index.html';">
+            <div class="icon2-logo-size "><i class="fa fa-home"></i></div>
+            <div class="text-icon2">หน้าแรก</div>
+          </div>
       </div>
 
-      <div class="w3-third w3-container ">
-        <div class="columns">
-          <div class="column is-48">
-            <label class="is-blue-text-label">เช็คอิน</label>
-            <input class="form-control" type="date" id="example-date-input">
-          </div>
-          <div class="column is-48 margin-left4">
-            <label class="is-blue-text-label">เช็คเอาท์</label>
-            <input class="form-control" type="date" id="example-date-input">
+      <div class="w3-third w3-container margin-top100px">
+        <div class="icon1" onclick="window.location='reservationCreate.html';">
+          <div class="icon1-logo-size "><i class="far fa-calendar-alt"></i></div>
+          <div class="text-icon1">สร้างการจอง</div>
+        </div>
+      </div>
+
+      <div class="w3-third w3-container  margin-top100px">
+        <div class="icon3" onclick="window.location='reservationManage.html';">
+          <div class="icon3-logo-size "><i class="fas fa-edit"></i></div>
+          <div class="text-icon3">จัดการการจอง</div>
+        </div>
+      </div>
+
+      <div class="w3-row w3-border w3-card w3-white ">
+        <div class="w3-third w3-container margin-top100px">
+          <div class="icon4">
+            <div class="icon4-logo-size "><i class="far fa-calendar-check"></i></div>
+            <div class="text-icon4">เช็คอิน</div>
           </div>
         </div>
 
-        <label class="is-blue-text-label">ประเภทห้อง</label>
-        <select class="form-control" id="exampleSelect1">
-          <option>Superior Room</option>
-          <option>Deluxe Room</option>
-          <option>Grand Deluxe Room</option>
-          <option>Junior Suite Room</option>
-          <option>Royal Ruite Room</option>
-          <option>Family Room</option>
-        </select>
-
-        <label class="is-blue-text-label ">เลขที่ห้อง</label>
-        <select class="form-control">
-          <option>Select</option>
-          <option>101</option>
-          <option>102</option>
-          <option>103</option>
-          <option>104</option>
-          <option>105</option>
-        </select>
-
-        <label class="is-blue-text-label">สถานะการจอง</label>
-        <select class="form-control">
-          <option>Reservation</option>
-          <option>Confirm</option>
-          <option>Cancel</option>
-        </select>
-      </div>
-
-      <div class="w3-third w3-container  margin-bottom100px">
-        <label class="is-blue-text-label">จำนวนผู้เข้าพัก</label>
-        <select class="form-control">
-          <option>Select</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
-
-        <div class="columns">
-          <div class="column is-48">
-            <label class="is-blue-text-label ">ผู้ใหญ่</label>
-            <select class="form-control">
-              <option>Select</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>
-          <div class="column is-48 margin-left4">
-            <label class="is-blue-text-label">เด็ก</label>
-            <select class="form-control">
-              <option>Select</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
+        <div class="w3-third w3-container margin-top100px">
+          <div class="icon5">
+            <div class="icon5-logo-size "><i class="fas fa-sign-out-alt"></i></div>
+            <div class="text-icon5">เช็คเอาท์</div>
           </div>
         </div>
 
-        <label class="is-blue-text-label">ความต้องการพิเศษ</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-        <button class="myButton1 margin-top30px is-pulled-right">บันทึกการจอง</button>
+        <div class="w3-third w3-container  margin-top100px margin-bottom100px">
+          <div class="icon6">
+            <div class="icon6-logo-size "><i class="fas fa-bed"></i></div>
+            <div class="text-icon6">จัดการห้อง</div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- End Page Container -->
-  </div>
 </body>
 
 </html>
